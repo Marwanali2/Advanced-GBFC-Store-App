@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class AdvancedGBFCStore extends StatelessWidget {
@@ -6,12 +5,19 @@ class AdvancedGBFCStore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Advanced GBFC Store'),
+    return MaterialApp(
+      title: 'Advanced GBFC Store App',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      body: const Center(
-        child: Text('Welcome to the Advanced GBFC Store!'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Advanced GBFC Store'),
+        ),
+        body: const Center(
+          child: Text('Welcome to the Advanced GBFC Store!'),
+        ),
       ),
     );
   }
