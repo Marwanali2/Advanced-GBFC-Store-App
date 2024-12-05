@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095601560572",
+    "project_id": "advanced-gbfc-store-app",
+    "storage_bucket": "advanced-gbfc-store-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095601560572:android:48c4998bbdd7710862b079",
+        "android_client_info": {
+          "package_name": "com.example.advanced_gbfc_store_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ5NeSHSHJxBeKzxG2sLXqGt4TM_gU2WE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
