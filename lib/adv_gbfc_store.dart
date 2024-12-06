@@ -1,4 +1,5 @@
 import 'package:advanced_gbfc_store_app/core/app/env_variables.dart';
+import 'package:advanced_gbfc_store_app/home_page.dart';
 import 'package:flutter/material.dart';
 
 class AdvancedGBFCStore extends StatelessWidget {
@@ -13,14 +14,7 @@ class AdvancedGBFCStore extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Advanced GBFC Store'),
-        ),
-        body: const Center(
-          child: Text('Welcome to the Advanced GBFC Store!'),
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
