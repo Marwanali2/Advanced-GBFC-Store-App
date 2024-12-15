@@ -6,6 +6,7 @@ import 'package:advanced_gbfc_store_app/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,5 +19,6 @@ void main() async {
       DeviceOrientation.portraitDown,
     ],
   );
+  await ScreenUtil.ensureScreenSize();
   runApp(const AdvancedGBFCStore());
 }

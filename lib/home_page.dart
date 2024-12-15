@@ -48,16 +48,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const SecondPage(),
-                  ),
-                );
-              },
-              child: const Text('Button'),
+            Text(
+              'Text Sccaling',
+              style: TextStyle(
+                fontSize: MediaQuery.textScalerOf(context).scale(
+                  10,
+                ),
+                //   fontSize: 10.sp,
+              ),
+              // textScaleFactor: 2,
+              textScaler: TextScaler.noScaling,
             ),
           ],
         ),
