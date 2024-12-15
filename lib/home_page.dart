@@ -1,6 +1,9 @@
 import 'package:advanced_gbfc_store_app/core/app/internet_connectivity_controller.dart';
+import 'package:advanced_gbfc_store_app/core/style/fonts/font_family_helper.dart';
+import 'package:advanced_gbfc_store_app/core/style/fonts/font_weight_helper.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,15 +52,21 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Text Sccaling',
+              'English Font',
               style: TextStyle(
-                fontSize: MediaQuery.textScalerOf(context).scale(
-                  10,
-                ),
-                //   fontSize: 10.sp,
+                fontFamily: FontFamilyHelper.englishFontFamily,
+                fontSize: 20.sp,
+                fontWeight: FontWeightHelper.meduim,
               ),
-              // textScaleFactor: 2,
-              textScaler: TextScaler.noScaling,
+            ),
+            SizedBox(height: 10.h),
+            Text(
+              'لا خط العربي',
+              style: TextStyle(
+                fontFamily: FontFamilyHelper.arabicFontFamily,
+                fontSize: 20.sp,
+                fontWeight: FontWeightHelper.meduim,
+              ),
             ),
           ],
         ),
