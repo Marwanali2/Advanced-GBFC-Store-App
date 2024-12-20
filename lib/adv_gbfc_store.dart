@@ -1,4 +1,6 @@
 import 'package:advanced_gbfc_store_app/core/app/env_variables.dart';
+import 'package:advanced_gbfc_store_app/core/routes/app_router.dart';
+import 'package:advanced_gbfc_store_app/core/routes/routes.dart';
 import 'package:advanced_gbfc_store_app/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,7 +24,8 @@ class AdvancedGBFCStore extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: const HomePage(),
+          initialRoute: Routes.loginScreen,
+          onGenerateRoute: AppRouter.onGenerateRoute,
         );
       },
     );
